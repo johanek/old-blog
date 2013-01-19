@@ -3,9 +3,9 @@
 # ----------------------- #
 
 url: http://johan.org.uk/octopress/
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+title: #sysadminsucks
+subtitle: If shit is worth doing, shit is hard
+author: Johan van den Dorpe
 simple_search: http://google.com/search
 description:
 
@@ -16,7 +16,7 @@ description:
 date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: /octopress/atom.xml
+subscribe_rss: /sysadmin/atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
 email:
@@ -26,10 +26,10 @@ email:
 # ----------------------- #
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
-root: /octopress
+root: /sysadmin
 permalink: /blog/:year/:month/:day/:title/
 source: source
-destination: public/octopress
+destination: public/sysadmin
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
