@@ -189,8 +189,8 @@ include apache
 
 Now we can run our tests:
 
-  cd features
-  cucumber puppet.feature
+    cd features
+    cucumber puppet.feature
  
 Which gives a result like:
 
