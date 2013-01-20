@@ -26,7 +26,7 @@ Sometimes, you want to bootstrap quickly. I want to grab the module and get some
 
 The other use case is you want a very generic module that exposes all the necessary controls to configure the software according to the requirements of the environment.
 
-This argument comes up a lot with regards to package management. Many sysadmins despise the post install scripts that are supplied with packages because they do things the admin wants to control using configuration management. But the packager is thinking about getting something working out of the box.
+This argument comes up a lot with regards to package management. Many sysadmins dislike the post install scripts that are supplied with packages because they do things the admin wants to control using configuration management. But the packager is thinking about getting something working out of the box.
 
 ~~~~~
 
