@@ -18,7 +18,7 @@ There were a number of ideas that ran throughout many of the talks, which I cons
 
 - **Everyone loves airplane stories.** I heard at least five, three of which ended in crashes.
 
-  
+The videos are turning up online, I'll put a direct link in all the presentations once they're all up [https://vimeo.com/monitorama/videos](https://vimeo.com/monitorama/videos)
 
 The first day had a single speaker track, here is my personal summary and interpretation of all the talks:
 
