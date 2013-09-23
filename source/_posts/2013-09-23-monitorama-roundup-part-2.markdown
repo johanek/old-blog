@@ -51,7 +51,7 @@ It also uses Dynamic Time Warping - to allow for phase shifts, if the change in 
 
 
 
-## [Pierre Yves](https://twitter.com/pyr) - Riemann ##
+## [Pierre-Yves Ritschard](https://twitter.com/pyr) - Riemann ##
 
 Unfortunately this presentation was marred by a projector/slide deck failure which made it hard to follow. It was incredibly disappointing because there was a lot of positive discussion around Riemann and I was looking forward to a better exposition of the tool.
 
@@ -64,7 +64,7 @@ Riemann is a event stream processing tool.
 - There is storage available for event correlation but I didn't really understand from his discussion
 
 
-## [Devdas Baghat](https://twitter.com/f3ew) - Big Graphite ##
+## [Devdas Bhagat](https://twitter.com/f3ew) - Big Graphite ##
 
 This workshop covered how booking.com have scaled their graphite setup.
 
