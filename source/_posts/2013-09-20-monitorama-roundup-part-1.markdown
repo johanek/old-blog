@@ -85,11 +85,8 @@ Lindsay presented a number of stories, from air disasters and hospitals, to pres
 This talk covered a lot of ground quite quickly, so these were the key things I took away:
 
 - Monitor for failure by reviewing problems that you've identified before, create detailed descriptions of those events, and only them alert on those descriptions - so that you have enough context to provide with an alert so that it's meaningful and actionable to the receiver.
-
 - Alert on your business concerns
-
 - Store all your data in the same place - treat logs, events and metrics the same
-
 - Our data isn't normally distributed and that makes shit hard. The next leaps in dealing with this data will come from outside Computer Science - more likely to be the hard science disciplines.
 
 
