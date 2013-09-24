@@ -79,7 +79,7 @@ As a way forward, she suggested the following:
 
 ## [Lindsay Holmwood](https://twitter.com/auxesis), Psychology of Alert Design ##
 
-[Slides](https://speakerdeck.com/auxesis/the-psychology-of-alert-design)
+[Slides](https://speakerdeck.com/auxesis/the-psychology-of-alert-design) | [Video](https://vimeo.com/75321812)
 
 Lindsay presented a number of stories, from air disasters and hospitals, to present two key ideas when designing alerts:
 
@@ -99,6 +99,8 @@ This talk covered a lot of ground quite quickly, so these were the key things I 
 
 ## [Michael Panchenko](https://twitter.com/mihasya) - Monitoring not just for numbers ##
 
+[Video](https://vimeo.com/75319951)
+
 Most of this talk was about the problems of configuration drift, and how subtle differences of systems outside configuration management policy scope can yield big surprises. 
 
 Michael presented his dream of enhancing numerical monitoring with non-numerical and non-binary observations, with some suggestions:
@@ -112,7 +114,7 @@ He also suggested describing activity in a standardised context: who, what, when
 
 ## [Jarkko Laine](https://twitter.com/jarkko) - Let your data tell a Story ##
 
-[Slides](http://bearmetal.eu/theden/let-your-data-tell-a-story/)
+[Slides](http://bearmetal.eu/theden/let-your-data-tell-a-story/) | [Video](https://vimeo.com/75318590)
 
 This was a really interesting talk about how humans process ideas and information, how these lead to biases in analysis - and how to exploit them.
 
@@ -128,6 +130,8 @@ This was condensed to two key directives for dashboard design and using visualis
 
 
 ## [Ryan Smith](https://twitter.com/ryandotsmith) - Predictable Failure ##
+
+[Video](https://vimeo.com/75304752)
 
 This talk featured the best airplane (near-) disaster stories as Ryan was extremely enthusiastic about the content. These provided  pertinent links to understanding failure in IT environments.
 
