@@ -25,6 +25,8 @@ The first day had a single speaker track, here is my personal summary and interp
 
 ## [Dylan Richard](https://www.twitter.com/dylanr) - Keynote ##
 
+[Video](https://vimeo.com/75176595)
+
 This was an experience talk about the Obama re-election campaign, what they did that worked, what they wished they had etc.
 
 Essentially they used every tool going, and used whatever made sense for the particular area they were looking at. But they weren't able to look carefully about their alerting and were emitting vast numbers of alerts. To deal with this, they leveraged the power users of their applications, who would give feedback about things not working and then they'd dig into the alerts to track down the causes. To improve on that feedback, they also created custom dashboards for those power users so they could report more context with the problem they were experiencing.
@@ -35,13 +37,14 @@ Alert fatigue was mentioned - "Be careful about crying wolf with alerts" because
 
 ## [Danese Cooper](https://www.twitter.com/divedanese) - Open Source Past Future ##
 
+[Video](https://vimeo.com/75179551)
 
 Gave a presentation about the history of open source, where it stands today, and advocated participation in open source and the institutions in that space.
 
 
 ## [Abe Stanway](https://www.twitter.com/abestanway), Etsy - Anomaly Detection with Algorithms ##
 
-[Slides](https://speakerdeck.com/astanway/mom-my-algorithms-suck)
+[Slides](https://speakerdeck.com/astanway/mom-my-algorithms-suck) | [Video](https://vimeo.com/75183236)
 
 Abe gave a great talk on the history of Statistical Process Analysis and how it is used in quality control on production lines and similar industrial settings. This is all about anomaly detection by looking for events that fall outside three standard deviations from the mean. But unfortunately this detection process only works on normally distributed data, and almost none of the data we collect is normally distributed. He followed this with a number of ideas for approaches to take to describe our data in an automated fashion - and then called on the audience to get involved in helping develop these models.
 
@@ -49,6 +52,8 @@ He also gave an interesting comparison between current monitoring being able to 
 
 
 ## [Mark McGranaghan](https://twitter.com/mmcgrana), Heroku - Fewer Better Systems ##
+
+[Video](https://vimeo.com/75189473)
 
 Presented the argument that the best systems are the ones that are used constantly - for example failover secondaries often do not work because they have not been subjected to live running conditions and the associated maintenance. So he suggested a bunch of things that are done differently now, which could be done the same, so we get better at doing less things:
 
@@ -59,6 +64,8 @@ Presented the argument that the best systems are the ones that are used constant
 
 
 ## [Katherine Daniels](https://twitter.com/beerops), Gamechanger - Staring at Graphs as-a-Service ##
+
+[Video](https://vimeo.com/75190339)
 
 Gave a great practical talk about how monitoring systems fail, and the series of small decisions that get made to improve individual situations but make the whole system, and the operator's experience, much much worse. Essentially, everything that create monitoring systems with screens full of red alerts, that have been that way for a long time and with no sign of resolution.
 
@@ -104,6 +111,8 @@ He also suggested describing activity in a standardised context: who, what, when
 
 
 ## [Jarkko Laine](https://twitter.com/jarkko) - Let your data tell a Story ##
+
+[Slides](http://bearmetal.eu/theden/let-your-data-tell-a-story/)
 
 This was a really interesting talk about how humans process ideas and information, how these lead to biases in analysis - and how to exploit them.
 
