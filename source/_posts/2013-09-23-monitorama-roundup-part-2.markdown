@@ -14,7 +14,7 @@ During the second day there were multiple tracks available - I mostly followed t
 
 ##  [Florian Forster](https://twitter.com/flocto), collectd - Collecting custom metrics ##
 
-[Slides]https://speakerdeck.com/monitorama/berlin-2013-collectd-workshop-florian-forster)
+[Slides](https://speakerdeck.com/monitorama/berlin-2013-collectd-workshop-florian-forster)
 
 Described the collectd data model and how to use the Exec plugin to execute arbitray scripts for collecting custom metrics.
 
