@@ -14,12 +14,16 @@ During the second day there were multiple tracks available - I mostly followed t
 
 ##  [Florian Forster](https://twitter.com/flocto), collectd - Collecting custom metrics ##
 
+[Slides]https://speakerdeck.com/monitorama/berlin-2013-collectd-workshop-florian-forster
+
 Described the collectd data model and how to use the Exec plugin to execute arbitray scripts for collecting custom metrics.
 
 Also presented a statsd plugin - implementation of statsd network protocol inside collectd.
 
 
 ## [Abe Stanway](https://www.twitter.com/abestanway) - Kale (Skyline and Oculus) ##
+
+[Slides](https://speakerdeck.com/monitorama/berlin-2013-kale-workshop-abe-stanway)
 
 Presentation of architecture for the kale suite of tools recently released by etsy. 
 
@@ -53,6 +57,8 @@ It also uses Dynamic Time Warping - to allow for phase shifts, if the change in 
 
 ## [Pierre-Yves Ritschard](https://twitter.com/pyr) - Riemann ##
 
+[Slides](https://speakerdeck.com/monitorama/berlin-2013-riemann-workshop-pierre-yves-ritschard)
+
 Unfortunately this presentation was marred by a projector/slide deck failure which made it hard to follow. It was incredibly disappointing because there was a lot of positive discussion around Riemann and I was looking forward to a better exposition of the tool.
 
 Riemann is a event stream processing tool.
@@ -65,6 +71,8 @@ Riemann is a event stream processing tool.
 
 
 ## [Devdas Bhagat](https://twitter.com/f3ew) - Big Graphite ##
+
+[Slides](https://speakerdeck.com/monitorama/berlin-2013-big-graphite-workshop-devdas-bhagat)
 
 This workshop covered how booking.com have scaled their graphite setup.
 
@@ -97,6 +105,8 @@ Other Problems:
 
 
 ## [David Goodlad](https://twitter.com/michaelgorsuch) - Infrastructure is Secondary ##
+
+[Slides](https://speakerdeck.com/monitorama/berlin-2013-session-david-goodlad)
 
 David presented that your primary metrics should be your business metrics, and that your infrastructure metrics are secondary. Which is not to say infrastructure metrics aren't important, but the business metrics are measures of how your business is performing and this is the data which you should be alerting on. 
 

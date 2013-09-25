@@ -18,8 +18,6 @@ There were a number of ideas that ran throughout many of the talks, which I cons
 
 - **Everyone loves airplane stories.** I heard at least five, three of which ended in crashes.
 
-The videos are turning up online, I'll put a direct link in all the presentations once they're all up [https://vimeo.com/monitorama/videos](https://vimeo.com/monitorama/videos)
-
 The first day had a single speaker track, here is my personal summary and interpretation of all the talks:
 
 
@@ -53,7 +51,7 @@ He also gave an interesting comparison between current monitoring being able to 
 
 ## [Mark McGranaghan](https://twitter.com/mmcgrana), Heroku - Fewer Better Systems ##
 
-[Video](https://vimeo.com/75189473)
+[Slides](https://speakerdeck.com/monitorama/berlin-2013-session-mark-mcgranaghan) | [Video](https://vimeo.com/75189473)
 
 Presented the argument that the best systems are the ones that are used constantly - for example failover secondaries often do not work because they have not been subjected to live running conditions and the associated maintenance. So he suggested a bunch of things that are done differently now, which could be done the same, so we get better at doing less things:
 
@@ -65,7 +63,7 @@ Presented the argument that the best systems are the ones that are used constant
 
 ## [Katherine Daniels](https://twitter.com/beerops), Gamechanger - Staring at Graphs as-a-Service ##
 
-[Video](https://vimeo.com/75190339)
+[Slides](https://speakerdeck.com/monitorama/berlin-2013-session-katherine-daniels) | [Video](https://vimeo.com/75190339)
 
 Gave a great practical talk about how monitoring systems fail, and the series of small decisions that get made to improve individual situations but make the whole system, and the operator's experience, much much worse. Essentially, everything that create monitoring systems with screens full of red alerts, that have been that way for a long time and with no sign of resolution.
 
@@ -89,6 +87,8 @@ Lindsay presented a number of stories, from air disasters and hospitals, to pres
 
 ## [Theo Schlossnagle](https://twitter.com/postwait) - Monitoring what the hell? ##
 
+[Slides](https://speakerdeck.com/monitorama/berlin-2013-session-theo-schlossnagle)
+
 This talk covered a lot of ground quite quickly, so these were the key things I took away:
 
 - Monitor for failure by reviewing problems that you've identified before, create detailed descriptions of those events, and only them alert on those descriptions - so that you have enough context to provide with an alert so that it's meaningful and actionable to the receiver.
@@ -99,7 +99,7 @@ This talk covered a lot of ground quite quickly, so these were the key things I 
 
 ## [Michael Panchenko](https://twitter.com/mihasya) - Monitoring not just for numbers ##
 
-[Video](https://vimeo.com/75319951)
+[Slides](https://speakerdeck.com/monitorama/berlin-2013-session-mikhail-panchenko) | [Video](https://vimeo.com/75319951)
 
 Most of this talk was about the problems of configuration drift, and how subtle differences of systems outside configuration management policy scope can yield big surprises. 
 
@@ -114,7 +114,7 @@ He also suggested describing activity in a standardised context: who, what, when
 
 ## [Jarkko Laine](https://twitter.com/jarkko) - Let your data tell a Story ##
 
-[Slides](http://bearmetal.eu/theden/let-your-data-tell-a-story/) | [Video](https://vimeo.com/75318590)
+[Slides](https://speakerdeck.com/monitorama/berlin-2013-session-jarkko-laine) | [Blog](http://bearmetal.eu/theden/let-your-data-tell-a-story/) | [Video](https://vimeo.com/75318590)
 
 This was a really interesting talk about how humans process ideas and information, how these lead to biases in analysis - and how to exploit them.
 
@@ -131,7 +131,7 @@ This was condensed to two key directives for dashboard design and using visualis
 
 ## [Ryan Smith](https://twitter.com/ryandotsmith) - Predictable Failure ##
 
-[Video](https://vimeo.com/75304752)
+[Slides](https://speakerdeck.com/monitorama/berlin-2013-session-ryan-smith) | [Video](https://vimeo.com/75304752)
 
 This talk featured the best airplane (near-) disaster stories as Ryan was extremely enthusiastic about the content. These provided  pertinent links to understanding failure in IT environments.
 
