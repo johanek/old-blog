@@ -106,7 +106,7 @@ Other Problems:
 
 ## [David Goodlad](https://twitter.com/michaelgorsuch) - Infrastructure is Secondary ##
 
-[Slides](https://speakerdeck.com/monitorama/berlin-2013-session-david-goodlad)
+[Slides](https://speakerdeck.com/monitorama/berlin-2013-session-david-goodlad) | [Video](https://vimeo.com/75664601)
 
 David presented that your primary metrics should be your business metrics, and that your infrastructure metrics are secondary. Which is not to say infrastructure metrics aren't important, but the business metrics are measures of how your business is performing and this is the data which you should be alerting on. 
 

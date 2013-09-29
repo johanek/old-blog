@@ -87,7 +87,7 @@ Lindsay presented a number of stories, from air disasters and hospitals, to pres
 
 ## [Theo Schlossnagle](https://twitter.com/postwait) - Monitoring what the hell? ##
 
-[Slides](https://speakerdeck.com/monitorama/berlin-2013-session-theo-schlossnagle)
+[Slides](https://speakerdeck.com/monitorama/berlin-2013-session-theo-schlossnagle) | [Video](https://vimeo.com/75428402)
 
 This talk covered a lot of ground quite quickly, so these were the key things I took away:
 
@@ -141,6 +141,8 @@ He also described a bunch of other failure cases, particular related around redu
 
 
 ## Daniele De Matteis & [Harry Wincup](https://twitter.com/harrywincup), Server Density - Monitoring, graphs and visualisations ##
+
+[Video](https://vimeo.com/75484249)
 
 This was a presentation from the designer's perspective on the theory of how visualisations should be presented, based on the experience of creating the new Server Density interface.
 
