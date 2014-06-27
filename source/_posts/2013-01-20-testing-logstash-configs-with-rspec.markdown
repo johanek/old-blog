@@ -16,7 +16,13 @@ Since the log format is changing, I'm taking the opportunity to clean up our log
 
 Logstash allows you to point to a directory containing many config files, so I've used this feature to split up the config into smaller parts. There is a config file per input and, a filter config for that input, and a related statsd output config. For outputs, I also have a config for elasticsearch.
 
-Because I use grep to tag log messages, then run a grok based on those tags, it was necessary to put all filters for an input in a single file. Otherwise your filter ordering can get messed up as you can't guarantee what order the files are read by logstash.
+~~Because I use grep to tag log messages, then run a grok based on those tags, it was necessary to put all filters for an input in a single file. Otherwise your filter ordering can get messed up as you can't guarantee what order the files are read by logstash.~~
+
+If you want to break out your filters in multiple files but need the filters to be loaded in a certain order, then prefix their names with numbers to explicitly specify the order.
+
+    100-filter-one.conf
+    101-filter-two.conf
+    ...
 
 ## Filter config ##
 
