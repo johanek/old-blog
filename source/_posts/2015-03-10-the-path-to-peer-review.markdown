@@ -10,17 +10,17 @@ As a sysadmin, I've never been part of a team that did peer review well. When yo
 
 Do you send an email out saying *"can you look at this?"*
 
-Do you have someone look at the screen of your work?
+Do you have someone look over your shoulder at your monitor?
 
 Do you have discussions about what you’re going to do?
 
 Sometimes I've done these things, and they've been partly effective - but usually they just get a reply of *"Looks good to me!"*
 
-Most of the sysadmins I've worked with will just make a change because they want to, or were asked to, and don’t tell anyone. Plenty of them want to go away and work on something and then deploy it and for everyone to use it and tell them they’re awesome.
+Most of the sysadmins I've worked with will just make a change because they want to, or were asked to, and don’t tell anyone. Or they want to be heros who surprise everyone by sweeping in with an amazing solution that they've been working on secretly.
 
-I don’t want to work where people are expected to pull rabbits out of hats. I hate surprises. Having done all those individualistic stupid things myself, I want to work in a team where we work together on problems out in the open. When you involve others, they are more engaged and feel part of the decision making process. And their feedback makes you produce better work.
+I don’t want to work where people are trying to perform heroics. I hate surprises. Having done all those individualistic stupid things myself, I want to work in a team where we work together on problems out in the open. When you involve others, they are more engaged and feel part of the decision making process. And their feedback makes you produce better work.
 
-My current role now has the best culture of reviewing work that I've seen. But we had to create it for ourselves, and this is what we did.
+My current role now has the best culture of reviewing work that I've experiences. But we had to create it for ourselves, and this is what we did.
 
 ## We put all our work in version control
 
@@ -30,21 +30,21 @@ Importing the files into repos was generally straightforward, but sometimes ther
 
 But we also wanted to catch when people would change things outside of git and do so without overwriting their changes. This would allow us to identify who was changing things and make sure they knew the new git based process. To do this we added a pre-receive hook on the server that would run `git status` in the destination path and look for changes.
 
-That was the first step in changing the way we worked. It wasn't a big change, but it got everyone somewhat comfortable with using git. The synchronous nature of the deployment was a big plus too, because all the feedback about success or failure would happen in your shell after running `git push`
+That was the first step in changing the way we worked. It wasn't a big change, but it got everyone fairly comfortable with using git. The synchronous nature of the deployment was a big plus too, because all the feedback about success or failure would happen in your shell after running `git push`
 
-## Notification workflows
+## Then we generated notifications
 
-This was pretty awesome, and we got more and more of our configs into this system over time. The next thing we wanted to do was to produce notifications about what's changing so we could catch mistakes, or find bad changes that broke things, and just understanding who is making changes to what systems.
+This was great progress, and we got more and more of our configs into this system over time. The next thing we wanted to do was to produce notifications about what's changing. This would allow us to catch mistakes, find bad changes that broke things, and to understand who is making changes to what systems.
 
 We did two things to achieve this - we made all these repos send email changelogs and diffs whenever someone pushed a change, and we created an IM bot that would publish details changes into a group chat root.
 
-This was great to produce an feed for the audit trail of changes happening to the system that we knew about. But whenever you saw a breaking change, you thought - well I knew that was going to break something, I could stop that before it was deployed.
+This was great to produce an audit trail of changes happening to the system. But whenever you saw a change break something, in hindsight you thought - well I knew that change would break, I could stop that before it was deployed.
 
-## Then we added Pull Requests
+## Finally, we added Pull Requests
 
 We knew we wanted to implement Pull Requests but we couldn't do this with the git server software we were originally using.
 
-Since we had started using Confluence and JIRA for our intranet and issue tracking, we moved all our git repos to Stash, which is Atlassian's github like git server. This provided us with the functionality we wanted.
+Since we had started using Confluence and JIRA for our intranet and issue tracking, we moved all our git repos to Stash, which is Atlassian's github-like git server. This provided us with the functionality we wanted.
 
 On a single repo, we enabled a Pull Request workflow - no one could commit to master any more and everyone had to create a new branch and raise a PR for the changes they wanted merged.
 
@@ -60,47 +60,47 @@ In the interim we had moved the checks for changes being made outside of git int
 
 Over time, we moved all the other repositories across to this workflow, starting with the repos with the highest number of risky changes. But, for a number of repos, we kept the old workflow with synchronous deployment hooks because all the changes being made were low risk and well established practises.
 
-## Initially, slowing down is hard to do
+## Initially, slowing down is hard
 
-The hardest thing to adapt to was that we were changing the perceived pace that people were working. Everyone was very used to being able to make the change they wanted immediately, and close that issue in JIRA straight away, and that's how they judged how long a piece of work takes to do. But that doesn't take into account the time spent troubleshooting and doing unplanned work.
+The hardest thing to adapt to was changing the perceived pace that people were working. Everyone was very used to being able to make the change they wanted immediately, and close that issue in JIRA straight away. That's how we judged how long a piece of work takes, but that doesn't take into account the time spent troubleshooting and doing unplanned work.
 
-What we were doing was moving more of the work up front before deployment, where you can fix problems with less disruption. But making that adjustment to the way you work can be really hard because you perceive the process to be slower.
+What we were doing was moving more of the work up front, where you can fix problems with less disruption. But making that adjustment to the way you work can be really hard because you perceive the process to be slower.
 
-Everyone in our team is a good sport and willing to give things a go - but as much as we could try to explain the benefit of slowing down, it takes time actually doing it to see how much better it is.
+Everyone in our team is a good sport and willing to give things a go - but as much as we could try to explain the benefit of slowing down, you only realise how much better it is by doing it over and over, and that takes time.
 
-Sometimes it's necessary to move faster, and we manage that simply - if someone needs a review now, they ask someone and explain why it's urgent. Similarly if I'm busy I'll say something like *"I'm probably not going to be able to review everything in my queue today. Is there anything that needs looking at now?"*
+Sometimes it's necessary to move faster, and we manage that simply - if someone needs a review now, they ask someone and explain why it's urgent. As a reviewer, if I'm busy I'll get people to prioritise their requests by asking *"I'm probably not going to be able to review everything in my queue today. Is there anything that needs looking at now?"*
 
 ## In time the benefits are demonstrated
 
-By using Pull Requests we created an asynchronous feedback system. In JIRA, you propose what you're going to do. Then you implement it how you think it should be done and create a PR. Then when a reviewer is available they'll provide feedback or approve the change. You keep making updates to your PR and JIRA until the change is approved or declined.
+By using Pull Requests we created an asynchronous feedback system. First you propose what you're going to do in JIRA. Then you implement it how you think it should be done and create a PR. Then when a reviewer is available they'll provide feedback or approve the change. You keep making updates to your PR and JIRA until the change is approved or declined.
 
-Given enough time, everyone experienced all of the following benefits of that feedback:
+With time, everyone experienced all of the following benefits of that feedback:
 
-**Mistakes are caught before they are deployed**
+**Catch mistakes before they are deployed**
 
 This was what we set out to do! There were breaking changes made before, and there are less of them now.
 
 **Learn about dependencies between components**
 
-A common type of feedback is *"How is this change going to affect X?"* - sometimes the requestor has already considered that and can explain the impact and any steps they took to deal with X. But if you haven't considered it, you need to research it. Then you've learnt more about how things are connected and have a greater appreciation of how the system works as a whole.
+A common type of feedback is *"How is this change going to affect X?"* - sometimes the requestor has already considered that and can explain the impact and any steps they took to deal with X. But if they haven't considered it, they need to research it. That way they learn more about how things are connected and have a greater appreciation of how the system works as a whole.
 
-**Consistent style and approaches**
+**Enforce consistent style and approaches**
 
-Everyone has their own preferred way of doing things - with a PR we can say this is the style we want to use, and enforce it. The tidier you keep your configs and code, the more respect others will have for them.
+Everyone has their own preferred style of text editing and coding. With a PR we can say this is the style we want to use, and enforce it. The tidier you keep your configs and code, the more respect others will have for them.
 
-It's massively helpful to get told there's an existing function that achieves what you're trying to do, or there's existing examples of approaches to solving a problem. This can help you learn better techniques, and avoid duplicating code.
+It's massively helpful to be told about an existing function that achieves what you're trying to do, or there's existing examples of approaches to solving a problem. This can help you learn better techniques, and avoid duplicating code.
 
 **Identify risky changes**
 
-With changes to fragile systems, you're never confident about hitting deploy even if the change looks good. Until it's been put in production and suffered the full range of uses there is risk. So this has allowed us to schedule deploying changes for times where the impact will be lower, or deploy the change to a subset of users.
+With changes to fragile systems, you're never confident about hitting deploy even if the change looks good. Until it's in production and put through it's paces there is risk. So this has allowed us to schedule deploying changes for times where the impact will be lower, or deploy the change to a subset of users.
 
-It's also stopped push and run scenarios - we avoid merges after 5pm, they can always wait for tomorrow morning!
+It's also stopped "push and run" scenarios - we avoid merges after 5pm, they can always wait for tomorrow morning!
 
-**Forced to explain what you’re trying to do**
+**Explain what you’re trying to do**
 
-Much of the review process is not about identifying problems with configs and code, but simply being aware of and understanding the changes that are taking place. This in invaluable to me as a reviewer.
+Much of the review process is not about identifying problems with configs and code, but simply being aware of and understanding the changes that are taking place. This is invaluable to me as a reviewer.
 
-So, when raising a Pull Request, it's expected that each commit has a reference to the JIRA issue related to the change. The Pull Request can have a comment about what is changing and any, and that can be very helpful but the explation of why the change is taking place must be in the JIRA.
+So, when raising a Pull Request, it's expected that each commit has a reference to the JIRA issue related to the change. The Pull Request can have a comment about what is changing and why, and that can be very helpful but the explanation of why the change is taking place must be in the JIRA.
 
 This way, when looking back at the change history we can also reference the motivations for making that change and see the bigger picture beyond the commit message.
 
@@ -108,22 +108,22 @@ This way, when looking back at the change history we can also reference the moti
 
 Somewhere along the way, getting your work reviewed became desirable. You realise the earlier you put your work out there for review, the earlier you get feedback and the less likely you are to spend time doing the wrong thing.
 
-We still have a number of repos that anyone can just change by pushing to master, there's no controls because these changes are considered safe. But people *choose* to create branches and PRs for their changes to these repos, because they *want* to have their work reviewed!
+We still have a number of repos that anyone can just change by pushing to master, there's no controls because these changes are considered safe. But people *choose* to create branches and PRs for their changes to these repos, because they *want* to have their work reviewed.
 
-## Change takes time ...
+## Change takes time...
 
 Going from no version control to making this cultural change in the way we approached our work took about 2.5 years.
 
-Throughout this period there was no grand plan that we were heading to a certain scenario. At each stage we could only see a small way forward, and had some things we were looking to do better, so we experimented and tried things. Then, for the things that worked, we made sure everyone kept doing it that way.
+Throughout this period there was no grand plan or defined scenario that we were trying to achieve. At each stage, we could only see a short way forward. We had some things we were looking to do better, so we experimented. When we found what worked, we made sure everyone kept doing it that way.
 
-At the start, I had no idea that peer review of sysadmin work would be done via code review. That didn't feel intuitive to the way we were working in the past. But as we've moved more things into git and we've seen the benefits, we want to manage everything the same way which drives moving more things into git.
+At the start, I had no idea that peer review of sysadmin work would be done via code review. As we've moved things into git and we saw the benefits, we want to manage everything the same way and that drives moving more things into git.
 
-We moved slowly because there was other work going on and we needed to get people comfortable with the new way of working and tooling before we could ask more of them. It takes time to change, and many of our team have benefitted from seeing that incremental process take place.
+We moved slowly because there was other work going on and we needed to get people comfortable with the new way of working and tooling before we could ask more of them. Change takes time, and many of our team have benefitted from seeing that incremental process take place.
 
-But it's been gratifying that the newest team members who have joined since we established PRs have said *"I was uncertain about it at first, but now I get it. It really works."*
+It's been gratifying that the newest team members who have joined since we established PRs have said *"I was uncertain about it at first, but now I get it. It really works."*
 
-## ... and involves lots of hard work
+## ... and involves lots of painstaking work
 
-To get to where we are has meant spending a lot of time setting up new repositories and isolating files that are managed by humans and automatically generated, migrating repositories to stash, creating deploy hooks, explaining how git works, and most of making sure you're providing useful reviews and that they happen regularly.
+To get to where we are has meant spending a lot of time setting up new repositories and isolating files that are managed by humans and automatically generated, migrating repositories to stash, creating deploy hooks, explaining how git works, and most of all making sure you're providing useful reviews and that they happen regularly.
 
-It's one thing to start setting up a couple of repos like this - but to fully establish the change you need to do lots of boring work where you make sure *everything* is migrated, even the more difficult cases. It's really important you're using a single system for everything!
+It's one thing to start setting up a couple of repos like this – but to fully establish the change you need to do lots of boring work to make sure *everything* is migrated, even the more difficult cases. It's important that everything is managed consistently, within one system.
